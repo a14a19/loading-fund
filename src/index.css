@@ -42,3 +42,7 @@ body {
     content: "...";
   }
 }
+
+.markee {
+  margin: 16px;
+}
