@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import YourImage from "../../Lorem_Ipsum.png";
-import { Route, Routes, useNavigate as navigateTo } from "react-router-dom";
 import { Button, ChakraProvider } from "@chakra-ui/react";
 import customTheme from "./customTheme";
 
