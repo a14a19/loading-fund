@@ -28,6 +28,18 @@ body {
   animation: dot 1500ms ease-in-out infinite;
 }
 
+#container:hover {
+  cursor: pointer;
+}
+
+#inner {
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5;
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.393);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
 @keyframes dot {
   0% {
     content: "";

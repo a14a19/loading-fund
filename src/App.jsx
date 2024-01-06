@@ -1,28 +1,37 @@
-import { useEffect } from "react"
-import StartAnimation from "./components/StartAnimation"
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import { hideLoading } from "./features/loader/loaderSlice";
+import StartAnimation from "./components/StartAnimation";
 import Home from "./pages/Home";
+import Careers from "./pages/Careers";
 
 function App() {
-
-  const { isLoading } = useSelector((store) => store.loading)
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const [isInitialRootLoading, setIsInitialRootLoading] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      dispatch(hideLoading())
-    }, 3500)
-  }, [])
+    if (location.pathname === "/") {
+      setIsInitialRootLoading(true);
+      setTimeout(() => {
+        dispatch(hideLoading());
+        setIsInitialRootLoading(false);
+      }, 3500);
+    }
+  }, [dispatch, location.pathname]);
 
   return (
     <>
-      {isLoading && <StartAnimation />}
-      {
-        !isLoading && <Home />
-      }
+      {isInitialRootLoading && <StartAnimation />}
+      {!isInitialRootLoading && (
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/careers" element={<Careers />} />
+        </Routes>
+      )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
