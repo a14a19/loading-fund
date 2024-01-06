@@ -1,7 +1,9 @@
-import CareersSection from "../components/CareersSection";
+// ! this component is not required, we can directly render it in home.jsx
 
-const Careers = () => {
-  return <CareersSection />;
-};
+// import CareersSection from "../components/CareersSection";
 
-export default Careers;
+// const Careers = () => {
+//   return <CareersSection />;
+// };
+
+// export default Careers;

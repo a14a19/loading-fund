@@ -25,13 +25,15 @@ function App() {
     <>
       {isInitialRootLoading && <StartAnimation />}
       {!isInitialRootLoading && (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/careers" element={<Careers />} />
-        </Routes>
+        <Home />
       )}
     </>
   );
 }
 
 export default App;
+
+// <Routes>
+//   <Route path="/" element={<Home />} />
+//   <Route path="/careers" element={<Careers />} />
+// </Routes>
