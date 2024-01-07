@@ -60,7 +60,10 @@ const CareersSection = () => {
         <div className="w-full border-t border-dotted border-gray-200 mt-8 z-10"></div>
         <div className="pt-4 pb-10 px-4 text-center z-10">
           <p className=" lg:text-7xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            VENTURE CAPITAL FIRM'S INVESTMENT PORTFOLIO ENCOMPASSES LEADING
+            VENTURES. THESE COMPANIES ARE ACTIVELY SEEKING TOP TALENT TO JOIN
+            THEIR TEAMS IN SOLVING COMPLEX CHALLENGES AND DEVELOPING INNOVATIVE
+            PRODUCTS AND PROTOCOLS FOR THE FUTURE.
           </p>
         </div>
         <div className="absolute bottom-0 w-full flex justify-center pb-4">

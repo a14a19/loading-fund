@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { hideLoading } from "./features/loader/loaderSlice";
 import StartAnimation from "./components/StartAnimation";
 import Home from "./pages/Home";
-import Careers from "./pages/Careers";
 
 function App() {
   const dispatch = useDispatch();
@@ -24,9 +23,7 @@ function App() {
   return (
     <>
       {isInitialRootLoading && <StartAnimation />}
-      {!isInitialRootLoading && (
-        <Home />
-      )}
+      {!isInitialRootLoading && <Home />}
     </>
   );
 }
