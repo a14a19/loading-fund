@@ -25,12 +25,12 @@ function Portfolio() {
                         <path
                             d="M61 1v60H1V1h60Z"
                             stroke="red"
-                            stroke-miterlimit="10"
+                            strokeMiterlimit="10"
                         ></path>
                         <path
                             d="M43.3 38H23.8V18.5"
                             stroke="red"
-                            stroke-miterlimit="10"
+                            strokeMiterlimit="10"
                         ></path>
                         <path d="M23.9 38 60.6 1.3" stroke="red"></path>
                     </svg>
@@ -77,33 +77,33 @@ function Portfolio() {
 
             <div className="mx-8 grid grid-cols-3 gap-x-8  ">
                 <div
-                    class="border-t-2 border-dashed border-[#fa4c14] py-4">WORKO</div>
+                    className="border-t-2 border-dashed border-[#fa4c14] py-4">WORKO</div>
                 <div
-                    class="border-t-2 border-dashed border-[#fa4c14] py-4">FAMWORK</div>
+                    className="border-t-2 border-dashed border-[#fa4c14] py-4">FAMWORK</div>
                 <div
-                    class="border-t-2 border-dashed border-[#fa4c14] py-4">SOLIDATING</div>
+                    className="border-t-2 border-dashed border-[#fa4c14] py-4">SOLIDATING</div>
                 <div
-                    class="border-t-2 border-dashed border-[#fa4c14] py-4">BANKIY</div>
+                    className="border-t-2 border-dashed border-[#fa4c14] py-4">BANKIY</div>
                 <div
-                    class="border-t-2 border-dashed border-[#fa4c14] py-4">HUSTLE</div>
+                    className="border-t-2 border-dashed border-[#fa4c14] py-4">HUSTLE</div>
                 <div
-                    class="border-t-2 border-dashed border-[#fa4c14] py-4">BEHANCE</div>
+                    className="border-t-2 border-dashed border-[#fa4c14] py-4">BEHANCE</div>
                 <div
-                    class="border-t-2 border-dashed border-[#fa4c14] py-4">BOLD</div>
+                    className="border-t-2 border-dashed border-[#fa4c14] py-4">BOLD</div>
                 <div
-                    class="border-t-2 border-dashed border-[#fa4c14] py-4">NAKE</div>
+                    className="border-t-2 border-dashed border-[#fa4c14] py-4">NAKE</div>
                 <div
-                    class=" border-t-2 border-dashed border-[#fa4c14] py-4">PLEASURE</div>
+                    className=" border-t-2 border-dashed border-[#fa4c14] py-4">PLEASURE</div>
                 <div
-                    class=" border-t-2 border-dashed border-[#fa4c14] py-4">PRODUCT</div>
+                    className=" border-t-2 border-dashed border-[#fa4c14] py-4">PRODUCT</div>
                 <div
-                    class=" border-t-2 border-dashed border-[#fa4c14] py-4">VERSMODELS</div>
+                    className=" border-t-2 border-dashed border-[#fa4c14] py-4">VERSMODELS</div>
                 <div
-                    class=" border-t-2 border-dashed border-[#fa4c14] py-4"></div>
+                    className=" border-t-2 border-dashed border-[#fa4c14] py-4"></div>
                 <div
-                    class=" border-t-2 border-dashed border-[#fa4c14] py-4"></div>
+                    className=" border-t-2 border-dashed border-[#fa4c14] py-4"></div>
                 <div
-                    class=" border-t-2 border-dashed border-[#fa4c14] py-4"></div>
+                    className=" border-t-2 border-dashed border-[#fa4c14] py-4"></div>
 
             </div>
 
