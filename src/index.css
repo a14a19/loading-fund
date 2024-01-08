@@ -40,6 +40,8 @@ body {
   overflow: hidden;
 }
 
+
+
 @keyframes dot {
   0% {
     content: "";
