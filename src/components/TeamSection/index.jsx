@@ -68,12 +68,12 @@ const Team = () => {
 
       {/* photos section */}
       <section
-        className="w-full grid place-content-center h-screen z-50 scroll-smooth"
+        className="w-full grid place-content-center h-screen z-50"
         ref={ref}
       >
         <motion.div
           style={{ y: translateYProgress }}
-          className="group md:w-[40rem] h-[90vh]"
+          className="group h-[90vh]"
         >
           <div className="h-full w-full cursor-pointer hover:drop-shadow-[0_0px_25px_rgba(255,0,0,0.5)] hover:duration-500">
             <img
@@ -90,7 +90,9 @@ const Team = () => {
                 mode.
               </p>
               <span className="px-2 border border-red-700 text-white uppercase mt-24">
-                <a href="#">linkedin</a>
+                <a href="https://sridhar-a.vercel.app/" target="_blank">
+                  about
+                </a>
               </span>
             </div>
           </div>
