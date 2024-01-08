@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useScroll, useTransform } from 'framer-motion';
 import { ScrollableText } from '../styles/style';
+import Header from './Header';
 
-const MovingText = () => {
+const HeroSection = () => {
+
   const { scrollYProgress } = useScroll();
   const lr_coordinates = useTransform(scrollYProgress, [0, 1], [0, 200]);
   const rl_coordinates = useTransform(scrollYProgress, [0, 1], [0, -200]);
-  const characters = [",  ", "%  ", "(  ", ")  ", "@  ", "#  ", "$  ", "^  ", "&  ", "*  ", "/  ", ".  ", " "];
+  const characters = [",", "%", "(", ")", "@", "#", "$", "^", "&", "*", "/", ".", " "];
   const [firstMarkee, setFirstMarkee] = useState("");
   const [secondMarkee, setSecondMarkee] = useState("");
-
+  
   useEffect(() => {
     const getTextWidth = (text) => {
       const dummyElement = document.createElement('span');
@@ -22,13 +24,41 @@ const MovingText = () => {
       return width;
     }
 
+    const insertRandomSpaces = (inputString, numSpaces) => {
+        if (numSpaces <= 0) {
+            return inputString;
+        }
+
+        const m = inputString.length;
+        const spacesArray = new Array(numSpaces).fill(" ");
+
+        // Generate random indices to insert spaces
+        const randomIndices = [];
+        for (let i = 0; i < numSpaces; i++) {
+            randomIndices.push(Math.floor(Math.random() * m));
+        }
+
+        // Sort the indices in ascending order
+        randomIndices.sort((a, b) => a - b);
+
+        // Insert spaces at the randomly generated indices
+        let resultString = inputString;
+        randomIndices.forEach((index, i) => {
+            resultString = resultString.slice(0, index + i) + spacesArray[i] + resultString.slice(index + i);
+        });
+
+        return resultString;
+    }
+
     const generateRandomText = (width) => {
-      let randomText = '';
+      let randomText = "";
       do {
         randomText += characters[Math.floor(Math.random() * characters.length)];
-      } while (getTextWidth(randomText) < width);
+      } while (getTextWidth(randomText) < width/2);
 
-      return randomText.trim();
+      randomText = insertRandomSpaces(randomText, (width/2) + 1);
+
+      return randomText;
     }
 
     const timer = setInterval(() => {
@@ -43,59 +73,38 @@ const MovingText = () => {
     return () => clearInterval(timer);
   }, []);
 
-  return (
-    <div style={{ overflowX: "clip", marginTop: "20px" }}>
-      <div style={{ textAlign: "center", fontSize: "2em" }}>
-        LoadingFUND_ICON
-      </div>
-      <div className='markee'>
-        <p id="markeeLine1" style={{ overflow: "clip", whiteSpace: "nowrap" }}>{firstMarkee}</p>
-        <div style={{ textAlign: "center", margin: "10px" }}>
-          <p>A leading global crypto investment fund</p>
-        </div>
-        <p id="markeeLine2" style={{ overflow: "clip", whiteSpace: "nowrap" }}>{secondMarkee}</p>
-      </div>
-      <ScrollableText style={{ x: lr_coordinates }} >
-        DRAGONFLY BACKS
-      </ScrollableText>
-      <ScrollableText style={{ x: rl_coordinates, textAlign: "right", color: "red" }} >
-        YOUR FAVORITE
-      </ScrollableText>
-      <ScrollableText style={{ x: lr_coordinates }} >
-        CRYPTO PROJECTS
-      </ScrollableText>
-      <ScrollableText style={{ x: rl_coordinates, textAlign: "right", color: "red" }} >
-        GLOBAL FROM
-      </ScrollableText>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui suscipit aliquid, 
-        laboriosam dolores nesciunt animi aperiam, sint eaque debitis esse hic, nostrum asperiores! 
-        Cumque non ullam nemo accusamus dignissimos.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui suscipit aliquid, 
-        laboriosam dolores nesciunt animi aperiam, sint eaque debitis esse hic, nostrum asperiores! 
-        Cumque non ullam nemo accusamus dignissimos.</div>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui suscipit aliquid, 
-        laboriosam dolores nesciunt animi aperiam, sint eaque debitis esse hic, nostrum asperiores! 
-        Cumque non ullam nemo accusamus dignissimos.</div>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui suscipit aliquid, 
-        laboriosam dolores nesciunt animi aperiam, sint eaque debitis esse hic, nostrum asperiores! 
-        Cumque non ullam nemo accusamus dignissimos.</div>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui suscipit aliquid, 
-        laboriosam dolores nesciunt animi aperiam, sint eaque debitis esse hic, nostrum asperiores! 
-        Cumque non ullam nemo accusamus dignissimos.</div>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui suscipit aliquid, 
-        laboriosam dolores nesciunt animi aperiam, sint eaque debitis esse hic, nostrum asperiores! 
-        Cumque non ullam nemo accusamus dignissimos.</div>
+  const containerStyle = {
+    overflowX: "clip",
+    marginTop: "20px", 
+    backgroundImage: 'url("../assets/loading_fund.jpeg")',
+    backgroundSize: 'cover',
+  }
 
-    </div>
-  );
-};
-
-function HeroSection() {
-  
   return (
     <div>
-      <MovingText />
-    </div>
+      <div style={containerStyle}>
+        <Header />
+        <div className='markee'>
+          <div id="markeeLine1" style={{ overflow: "clip", whiteSpace: "pre", fontSize: "12px" }}>{firstMarkee}</div>
+          <div style={{ textAlign: "center", textTransform: "uppercase" }}>
+            <p>Unleashing Potential, One Investment at a Time.</p>
+          </div>
+          <div id="markeeLine2" style={{ overflow: "clip", whiteSpace: "pre", fontSize: "12px" }}>{secondMarkee}</div>
+        </div>
+        <ScrollableText style={{ x: lr_coordinates, lineHeight: "4.5rem", padding: "24px 0px 32px" }} >
+          DRAGONFLY BACKS
+        </ScrollableText>
+        <ScrollableText style={{ x: rl_coordinates, lineHeight: "4.5rem", textAlign: "right" }} >
+          YOUR FAVORITE
+        </ScrollableText>
+        <ScrollableText style={{ x: lr_coordinates, lineHeight: "4.5rem",  padding: "36px 0px", color: "red", fontFamily: "'DotGothic16', serif" }} >
+          CRYPTO PROJECTS
+        </ScrollableText>
+        <ScrollableText style={{ x: rl_coordinates, lineHeight: "4.5rem", paddingBottom: "48px", textAlign: "right", color: "red", fontFamily: "'DotGothic16', serif" }} >
+          GLOBAL FROM
+        </ScrollableText>
+      </div>
+  </div>
   );
 }
 
