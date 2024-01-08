@@ -1,4 +1,4 @@
-import Portfolio from "../components/portfolio"
+import Portfolio from "../components/Portfolio"
 import HeroSection from "../components/HeroSection"
 import CareersSection from "../components/CareersSection"
 import Footer from "../components/Footer"
