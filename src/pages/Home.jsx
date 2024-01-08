@@ -1,6 +1,7 @@
 import HeroSection from "../components/HeroSection";
 import CareersSection from "../components/CareersSection";
 import Footer from "../components/Footer";
+import Portfolio from "../components/portfolio"
 // * all the components created should be rendered here
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
     <>
       <HeroSection />
       <CareersSection />
+      <Portfolio />
       <Footer />
     </>
   );
