@@ -1,8 +1,9 @@
 const Footer = () => {
   return (
     <>
-      <div className="absolute top-2  w-full border-t-2 border-dotted border-gray-200 z-10"></div>
-      <div className="absolute top-2 h-screen border-r-2 border-dotted border-gray-200 w-3/5 ml-4">
+      {/* absolute top-2 - removed classes */}
+      <div className=" w-full border-t-2 border-dotted border-gray-200 z-10"></div>
+      <div className=" h-screen border-r-2 border-dotted border-gray-200 w-3/5 ml-4">
         <div className="text-xs mt-4 flex flex-wrap">
           <div className="space-y-2">
             <p> 00 HOME </p>
