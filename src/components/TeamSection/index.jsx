@@ -29,12 +29,12 @@ const Team = () => {
             <path
               d="M61 1v60H1V1h60Z"
               stroke="red"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
             ></path>
             <path
               d="M43.3 38H23.8V18.5"
               stroke="red"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
             ></path>
             <path d="M23.9 38 60.6 1.3" stroke="red"></path>
           </svg>
