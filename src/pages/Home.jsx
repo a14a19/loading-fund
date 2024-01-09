@@ -5,6 +5,7 @@ import Footer from "../components/Footer"
 import Team from "../components/TeamSection"
 import About from "../components/About"
 
+
 // * all the components created should be rendered here
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
       <Portfolio />
       <Footer />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
