@@ -7,14 +7,14 @@ import { Routes, Route } from "react-router-dom";
 
 function Home() {
   return (
-    <>
+    <div id="home">
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/contact" />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
