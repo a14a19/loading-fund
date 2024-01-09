@@ -4,6 +4,7 @@ import CareersSection from "../components/CareersSection"
 import Footer from "../components/Footer"
 import Team from "../components/TeamSection"
 import About from "../components/About"
+import Header from "../components/Header"
 
 
 // * all the components created should be rendered here
@@ -11,6 +12,7 @@ import About from "../components/About"
 function Home() {
   return (
     <>
+      <Header />
       <HeroSection />
       <About />
       <Team />
