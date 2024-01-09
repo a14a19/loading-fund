@@ -1,11 +1,14 @@
 const Footer = () => {
   return (
     <>
-      <div className="relative w-full border-t-2 border-dotted border-gray-200 mt-96" />
-      <div className="relative flex min-h-screen">
+      <div
+        className=" w-full border-t-2 border-dotted border-gray-200"
+        style={{ marginTop: "50rem" }}
+      />
+      <div className="relative flex min-h-screen -space-x-96">
         <div className="flex-grow border-r-2 border-dotted border-gray-200 p-4">
-          {/* 1st Quadrant content */}
-          <div className="mt-4 flex flex-wrap">
+          {/* 2nd Quadrant content */}
+          <div className="text-left mt-4 flex-grow flex">
             <div className="text-sm md:text-2xl ml-20 space-y-2">
               <p>00 HOME</p>
               <p>01 ABOUT</p>
@@ -23,9 +26,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* 2nd Quadrant content */}
-        <div className="w-2/5 p-4">
-          <div className="bg-gray-300 border-white border text-black w-min p-2 text-[14px] text-center mb-6">
+        {/* 1st Quadrant content */}
+        <div className="w-1/2 p-4 flex flex-col items-center">
+          <div className="bg-gray-300 border-white border text-black w-min p-2 text-[14px] text-center mb-6 ml-[-72px]">
             Info
           </div>
           <p>LOREM IPSEM ...</p>
@@ -35,12 +38,13 @@ const Footer = () => {
       <div className="flex w-full">
         {/* 3rd Quadrant content */}
         <div className="w-1/2 p-4 text-2xl md:text-9xl ">
-          <h1> GLOBAL FROM DAY ONE </h1>
+          <h1> GLOBAL FROM </h1>
+          <h1 className="text-orange-500"> DAY ONE</h1>
         </div>
 
         {/* 4th Quadrant Content*/}
-        <div className="w-2/12 p-4">
-          <p className="text-right text-xs">LOGO GOES HERE!</p>
+        <div className="w-1/2 p-4 flex justify-center">
+          <p className="">LOGO GOES HERE!</p>
         </div>
       </div>
     </>
