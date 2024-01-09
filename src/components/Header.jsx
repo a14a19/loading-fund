@@ -5,21 +5,21 @@ import {
   DrawerBody,
   DrawerHeader,
   DrawerContent,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react"
+import { Link } from "react-router-dom"
 
 const Header = () => {
+  const [menuClassName, setMenuClassName] = useState(false)
 
-    const [menuClassName, setMenuClassName] = useState(false);
+  const mouseEntered = (event) => {
+    event.preventDefault()
+    setMenuClassName(true)
+  }
 
-    const mouseEntered = (event) => {
-        event.preventDefault();
-        setMenuClassName(true);
-    }
-    
-    const mouseOut = (event) => {
-        event.preventDefault();
-        setMenuClassName(false);
-    }
+  const mouseOut = (event) => {
+    event.preventDefault()
+    setMenuClassName(false)
+  }
 
     return (
         <div className={`header sticky`}>
@@ -135,10 +135,13 @@ const Header = () => {
                         </DrawerContent>
                     </Drawer>
                 </div>
-            }
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer>
         </div>
-    );
-  };
-  
-  export default Header;
-  
+      )}
+    </div>
+  )
+}
+
+export default Header
