@@ -179,7 +179,7 @@ const Contact = () => {
                     <div
                       key={ele.id}
                       onClick={() => setForm({ ...form, interest: ele.name })}
-                      className={`uppercase border border-black rounded-sm py-2 font-semibold cursor-pointer  hover:duration-500 ${
+                      className={`uppercase border border-black rounded-sm py-2 font-medium cursor-pointer  hover:duration-500 ${
                         form.interest === ele.name
                           ? "bg-[#FA4C14]"
                           : "hover:bg-gray-800 hover:text-white"
@@ -210,7 +210,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="btn uppercase hover:bg-[#FA4C14] hover:duration-500 corner-border md:text-2xl font-normal"
+                className="btn uppercase w-full hover:bg-[#FA4C14] hover:duration-500 corner-border md:text-2xl font-extralight"
               >
                 submit
               </button>
@@ -221,28 +221,27 @@ const Contact = () => {
               </span>
               <br />
               <br />
-              SUCCESSFUL FUNDS BEGIN WITH EXCEPTIONAL INDIVIDUALS. WE COMMIT TO
-              LONG-TERM INVESTMENTS IN OUR COMPANIES, PARTNERS, AND TEAM
-              MEMBERS.
+              We're eager to hear about your ventures. And we can't wait to
+              discover how your aspirations fit into this dynamic landscape.
             </h2>
           </div>
         </section>
       </div>
 
-      <div className="texts overflow-hidden w-full bg-white pb-28 text-[#FA4C14] text-4xl lg:text-6xl xl:text-8xl flex flex-row gap-4 font-medium">
+      <div className="texts overflow-hidden w-full bg-white pb-28 text-[#FA4C14] text-4xl lg:text-6xl xl:text-8xl flex flex-row gap-4 font-medium uppercase">
         <div className="text-slide flex items-center space-x-8 ">
           <h1>
-            GLOBAL FROM DAY ONE&nbsp;
+            Technology, global from the start, &nbsp;
             <span style={{ fontFamily: "DotGothic16" }}>
-              TECHNOLOGY IS CULTURE
+              is culture in action
             </span>
           </h1>
         </div>
         <div className="text-slide flex items-center space-x-8">
           <h1>
-            GLOBAL FROM DAY ONE&nbsp;
+            Technology, global from the start,&nbsp;
             <span style={{ fontFamily: "DotGothic16" }}>
-              TECHNOLOGY IS CULTURE
+              is culture in action
             </span>
           </h1>
         </div>
