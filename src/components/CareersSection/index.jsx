@@ -37,7 +37,7 @@ const CareersSection = () => {
     <>
       {/* fixed top-4 - removed these classes */}
       <div className=" md:top-10 w-full border-b border-dotted border-gray-200 z-10"></div>
-      <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden pt-4 relative">
+      <div id="careers" className="flex flex-col items-center justify-center min-h-screen overflow-hidden pt-4 relative">
         <div id="inner" className="text-center relative px-4">
           <img
             ref={imageRef}

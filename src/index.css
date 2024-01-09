@@ -72,6 +72,7 @@ body {
   width: 24vw !important;
   right: 0 !important;
   left: 100% !important;
+  z-index: 9999;
 }
 
 .menu_list_item {
@@ -158,4 +159,43 @@ body {
   to {
     transform: translateX(-100%);
   }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 8px 24px 8px;
+  background: linear-gradient(black, transparent);
+  opacity: 1;
+  color: white;
+  width: 100%;
+  transition: opacity .5s var(--ease-out-expo);
+  z-index: 2;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #fd0000;
+  transform: translate3d(0px, 0px, 0px);
 }

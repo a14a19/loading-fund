@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useScroll, useTransform } from 'framer-motion';
 import { ScrollableText } from '../styles/style';
-import asset from "../assets/loading_fund.jpeg";
+import asset from "../assets/background_image.jpg";
 
 const HeroSection = () => {
 
@@ -76,12 +76,10 @@ const HeroSection = () => {
   const containerStyle = {
     overflowX: "clip",
     marginTop: "20px",
-    backgroundImage: 'url("../assets/loading_fund.jpeg")',
-    backgroundSize: 'cover',
   }
 
   return (
-    <div className='bg-no-repeat bg-center' style={{ backgroundImage: `url(${asset})` }}>
+    <div className='bg-no-repeat bg-center' style={{ backgroundImage: `url(${asset})`,  backgroundSize: "contain" }}>
       <div style={containerStyle}>
         <div className='markee'>
           <div id="markeeLine1" style={{ overflow: "clip", whiteSpace: "pre", fontSize: "12px" }}>{firstMarkee}</div>
@@ -90,17 +88,17 @@ const HeroSection = () => {
           </div>
           <div id="markeeLine2" style={{ overflow: "clip", whiteSpace: "pre", fontSize: "12px" }}>{secondMarkee}</div>
         </div>
-        <ScrollableText style={{ x: lr_coordinates, lineHeight: "4.5rem", padding: "24px 0px 32px" }} >
-          DRAGONFLY BACKS
+        <ScrollableText style={{ x: lr_coordinates, lineHeight: "4.5rem", padding: "24px 8px 20px" }} >
+          BRIDGING AMBITION
         </ScrollableText>
-        <ScrollableText style={{ x: rl_coordinates, lineHeight: "4.5rem", textAlign: "right" }} >
-          YOUR FAVORITE
+        <ScrollableText style={{ x: rl_coordinates, lineHeight: "4.5rem", textAlign: "right", padding: "0px 8px" }} >
+          AND OPPORTUNITY
         </ScrollableText>
-        <ScrollableText style={{ x: lr_coordinates, lineHeight: "4.5rem", padding: "36px 0px", color: "red", fontFamily: "'DotGothic16', serif" }} >
-          CRYPTO PROJECTS
+        <ScrollableText style={{ x: lr_coordinates, lineHeight: "4.5rem", padding: "24px 12px 20px", color: "red", fontFamily: "'DotGothic16', serif" }} >
+          EMPOWERING INNOVATION
         </ScrollableText>
-        <ScrollableText style={{ x: rl_coordinates, lineHeight: "4.5rem", paddingBottom: "48px", textAlign: "right", color: "red", fontFamily: "'DotGothic16', serif" }} >
-          GLOBAL FROM
+        <ScrollableText style={{ x: rl_coordinates, lineHeight: "4.5rem", padding: "8px 12px 48px", textAlign: "right", color: "red", fontFamily: "'DotGothic16', serif" }} >
+          WITH PURPOSEFUL CAPITAL
         </ScrollableText>
       </div>
     </div>

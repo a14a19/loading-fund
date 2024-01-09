@@ -1,6 +1,6 @@
 function Portfolio() {
     return (
-        <div className="divide-dashed mb-8 px-40px">
+        <div id="portfolio" className="divide-dashed mb-8 px-40px">
             <div className=" mx-8 mt-8 md:top-10  border-b border-dashed border-gray-200 z-10"></div>
             <div className="flex flex-col justify-between lg:flex-row ml-8">
                 <p

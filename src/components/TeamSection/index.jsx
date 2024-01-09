@@ -11,7 +11,7 @@ const Team = () => {
   const translateYProgress = useTransform(scrollYProgress, [0, 1], [300, -300])
 
   return (
-    <div className="h-auto bg-white px-10">
+    <div id="team" className="h-auto bg-white px-10">
       {/* border top */}
       <div className="border-b border-dashed border-black h-20" />
       {/* heading section */}
