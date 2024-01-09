@@ -1,4 +1,21 @@
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    Button,
+    Text,
+} from "@chakra-ui/react"
+import { useDisclosure } from '@chakra-ui/react';
+import { useState } from "react";
+
+
 function Portfolio() {
+    const { isOpen, onOpen, onClose } = useDisclosure();
+
     return (
         <div className="divide-dashed mb-8 px-40px">
             <div className=" mx-8 mt-8 md:top-10  border-b border-dashed border-gray-200 z-10"></div>
@@ -57,7 +74,9 @@ function Portfolio() {
                     <span className="bg-gray-300 border-white border w-min text-black p-2 text-[14px] mb-4">
                         ETHOS
                     </span>
-                    We support teams tackling big, wicked problems and pushing the boundaries of the industry. Working on something weird? We love the weird stuff.
+                    WE SUPPORT TEAMS TACKLING BIG, WICKED PROBLEMS AND PUSHING THE BOUNDARIES OF THE INDUSTRY. WORKING
+                    ON SOMETHING WEIRD? WE LOVE THE WEIRD STUFF.
+
                 </div>
 
 
@@ -107,7 +126,57 @@ function Portfolio() {
 
             </div>
 
-        </div>
+            <div className="bg-gray-800 p-4">
+                <Button className="bg-gray-300 border-white 
+                border w-min text-black p-2 text-[14px] mb-4" onClick={onOpen}>Open Modal</Button>
+
+                {/* <Modal isOpen={isOpen} onClose={onClose}>
+                    <ModalOverlay className="bg-transparent">
+                        <ModalContent>
+                            <ModalHeader>Modal Title</ModalHeader>
+                            <ModalCloseButton />
+
+                            <ModalBody>
+                                <div className="text-black">
+                                    Hello
+                                </div>
+                            </ModalBody>
+
+                            <ModalFooter>
+                                <Button colorScheme="blue" mr={3} onClick={onClose}>
+                                    Close
+                                </Button>
+                                <Button variant="ghost">Secondary Action</Button>
+                            </ModalFooter>
+                        </ModalContent>
+                    </ModalOverlay>
+                </Modal> */}
+
+                <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
+                    <ModalOverlay />
+                    <ModalContent>
+                        <ModalHeader>Modal Title</ModalHeader>
+                        <ModalCloseButton />
+                        <ModalBody>
+                            <Text fontWeight='bold' mb='1rem'>
+                                You can scroll the content behind the modal
+                            </Text>
+                            {/* <Lorem count={2} /> */}
+                        </ModalBody>
+
+                        <ModalFooter>
+                            <Button colorScheme='blue' mr={3} onClick={onClose}>
+                                Close
+                            </Button>
+                            <Button variant='ghost'>Secondary Action</Button>
+                        </ModalFooter>
+                    </ModalContent>
+                </Modal>
+
+            </div>
+
+
+        </div >
     )
 }
 export default Portfolio

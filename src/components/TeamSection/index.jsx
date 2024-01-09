@@ -1,5 +1,14 @@
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+} from "@chakra-ui/react"
 
 const Team = () => {
   const ref = useRef(null)
