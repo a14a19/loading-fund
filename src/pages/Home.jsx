@@ -1,7 +1,8 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import Main from "./Main";
-import { Routes, Route } from "react-router-dom";
+import Contact from "./Contact"
+import Main from "./Main"
+import { Routes, Route } from "react-router-dom"
 
 // * all the components created should be rendered here
 
@@ -11,11 +12,11 @@ function Home() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/contact" />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home
