@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useScroll, useTransform } from 'framer-motion';
 import { ScrollableText } from '../styles/style';
+import asset from "../assets/loading_fund.jpeg";
 
 const HeroSection = () => {
 
@@ -80,7 +81,7 @@ const HeroSection = () => {
   }
 
   return (
-    <div>
+    <div className='bg-no-repeat bg-center' style={{ backgroundImage: `url(${asset})` }}>
       <div style={containerStyle}>
         <div className='markee'>
           <div id="markeeLine1" style={{ overflow: "clip", whiteSpace: "pre", fontSize: "12px" }}>{firstMarkee}</div>

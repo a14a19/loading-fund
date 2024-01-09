@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useLocation } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { hideLoading } from "./features/loader/loaderSlice";
 import StartAnimation from "./components/StartAnimation";
 import Home from "./pages/Home";

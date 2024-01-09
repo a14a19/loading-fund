@@ -1,11 +1,7 @@
-import Portfolio from "../components/Portfolio"
-import HeroSection from "../components/HeroSection"
-import CareersSection from "../components/CareersSection"
 import Footer from "../components/Footer"
-import Team from "../components/TeamSection"
-import About from "../components/About"
 import Header from "../components/Header"
-
+import Main from "./Main";
+import { Routes, Route } from "react-router-dom";
 
 // * all the components created should be rendered here
 
@@ -13,11 +9,10 @@ function Home() {
   return (
     <>
       <Header />
-      <HeroSection />
-      <About />
-      <Team />
-      <CareersSection />
-      <Portfolio />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/contact" />
+      </Routes>
       <Footer />
     </>
   );
