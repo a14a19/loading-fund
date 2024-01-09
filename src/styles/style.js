@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const ScrollableText = styled(motion.h1)`
   font-family: var(--font-primary);
   color: white;
-  font-size: 7em;
+  font-size: 6em;
   z-index: 1;
   margin: 0;
   white-space: nowrap;
