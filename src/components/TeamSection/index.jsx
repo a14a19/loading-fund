@@ -11,12 +11,14 @@ const Team = () => {
   const translateYProgress = useTransform(scrollYProgress, [0, 1], [300, -300])
 
   return (
-    <div className="h-auto bg-white px-10">
+    <div id="team" className="h-auto bg-white px-10">
       {/* border top */}
       <div className="border-b border-dashed border-black h-20" />
       {/* heading section */}
       <section className="flex justify-between gap-4 flex-col md:flex-row text-6xl  lg:text-7xl xl:text-9xl mt-6">
-        <h1 className="text-red-500">03</h1>
+        <h1 className="text-[#FA4C14]" style={{ fontFamily: "DotGothic16" }}>
+          03
+        </h1>
         <h1 className="text-black mr-auto md:ml-16 lg:ml-32 font-black">
           TEAM<sup>##</sup>
         </h1>
@@ -28,15 +30,15 @@ const Team = () => {
           >
             <path
               d="M61 1v60H1V1h60Z"
-              stroke="red"
+              stroke="#FA4C14"
               strokeMiterlimit="10"
             ></path>
             <path
               d="M43.3 38H23.8V18.5"
-              stroke="red"
+              stroke="#FA4C14"
               strokeMiterlimit="10"
             ></path>
-            <path d="M23.9 38 60.6 1.3" stroke="red"></path>
+            <path d="M23.9 38 60.6 1.3" stroke="#FA4C14"></path>
           </svg>
         </div>
       </section>
@@ -54,8 +56,8 @@ const Team = () => {
             EVERY STAGE OF THE JOURNEY - FROM CONCEPTUALIZING DAY-ONE IDEAS TO
             ACHIEVING GLOBAL INFLUENCE.
           </h2>
-          <h2 className="text-md w-full md:w-2/5 text-black md:pl-20 lg:pl-32">
-            <span className="bg-black border-white border text-white p-2 text-[14px]">
+          <h2 className="text-md w-full md:w-2/5 text-black md:pl-20 lg:pl-32 text-xs lg:text-sm xl:text-md">
+            <span className="bg-black border-white border text-white p-1 md:p-2 text-[14px]">
               ETHOS
             </span>
             <br />
@@ -89,7 +91,7 @@ const Team = () => {
                 fields, and currently crafting innovative ventures in stealth
                 mode.
               </p>
-              <span className="px-2 border border-red-700 text-white uppercase mt-24">
+              <span className="px-2 border border-red-700 text-white uppercase mt-24 hover:bg-[#FA4C14]">
                 <a href="https://sridhar-a.vercel.app/" target="_blank">
                   about
                 </a>
@@ -97,7 +99,7 @@ const Team = () => {
             </div>
           </div>
 
-          <h2 className="uppercase text-black text-xl sm:text-3xl md:text-4xl font-thin group-hover:text-red-500 hover:duration-500 pt-8">
+          <h2 className="uppercase text-black text-xl sm:text-3xl md:text-4xl font-thin group-hover:text-[#FA4C14] hover:duration-500 pt-8">
             sridhar&nbsp;|&nbsp;
             <span className="text-md sm:text-lg md:text-2xl font-thin">
               Founder
