@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import YourImage from "../../Lorem_Ipsum.png";
-import { Button, ChakraProvider } from "@chakra-ui/react";
+import { Button, ChakraProvider, Box } from "@chakra-ui/react";
 import customTheme from "./customTheme";
 
 const CareersSection = () => {
@@ -67,17 +67,98 @@ const CareersSection = () => {
           </p>
         </div>
         <div className="absolute bottom-0 w-full flex justify-center pb-4">
-          {" "}
-          {/* ChakraUI Button */}
           <ChakraProvider theme={customTheme}>
             <Button
-              colorScheme="orange"
-              size="lg"
               onClick={() =>
-                window.open("https://www.linkedin.com/company/loading-fund/")
+                window.open(
+                  "https://www.linkedin.com/company/loading-fund/jobs/"
+                )
               }
+              position="relative"
+              backgroundColor="black"
+              color="white"
+              margin="24px"
+              height="60px"
+              width="420px"
+              padding="20px"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              overflow="hidden"
+              _hover={{
+                backgroundColor: "#fa4c14",
+                "> .corner-element": {
+                  transform: "translate(2px, 2px)",
+                },
+              }}
             >
-              Apply Here Button
+              <Box
+                className="corner-element"
+                position="absolute"
+                top="0"
+                left="0"
+                height="10px"
+                width="100%"
+                _before={{
+                  content: '""',
+                  position: "absolute",
+                  left: "0",
+                  borderLeft: "1px solid red",
+                  borderTop: "1px solid red",
+                  width: "10px",
+                  height: "10px",
+                  transition: "transform 0.2s ease",
+                }}
+                _after={{
+                  content: '""',
+                  position: "absolute",
+                  right: "0",
+                  borderTop: "1px solid red",
+                  borderRight: "1px solid red",
+                  width: "10px",
+                  height: "10px",
+                  transition: "transform 0.2s ease",
+                }}
+              />
+
+              <Box
+                position="absolute"
+                top="50%"
+                left="50%"
+                transform="translate(-50%, -50%)"
+                zIndex="1"
+              >
+                APPLY FOR A ROLE AT LOADING FUND
+              </Box>
+
+              <Box
+                className="corner-element"
+                position="absolute"
+                bottom="0"
+                left="0"
+                height="10px"
+                width="100%"
+                _before={{
+                  content: '""',
+                  position: "absolute",
+                  left: "0",
+                  borderBottom: "1px solid red",
+                  borderLeft: "1px solid red",
+                  width: "10px",
+                  height: "10px",
+                  transition: "transform 0.2s ease",
+                }}
+                _after={{
+                  content: '""',
+                  position: "absolute",
+                  right: "0",
+                  borderBottom: "1px solid red",
+                  borderRight: "1px solid red",
+                  width: "10px",
+                  height: "10px",
+                  transition: "transform 0.2s ease",
+                }}
+              />
             </Button>
           </ChakraProvider>
         </div>
