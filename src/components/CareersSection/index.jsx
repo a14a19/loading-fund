@@ -70,7 +70,9 @@ const CareersSection = () => {
           <ChakraProvider theme={customTheme}>
             <Button
               onClick={() =>
-                window.open("https://www.linkedin.com/company/loading-fund/")
+                window.open(
+                  "https://www.linkedin.com/company/loading-fund/jobs/"
+                )
               }
               position="relative"
               backgroundColor="black"
@@ -126,7 +128,7 @@ const CareersSection = () => {
                 transform="translate(-50%, -50%)"
                 zIndex="1"
               >
-                APPLY HERE FOR A ROLE AT LOADING FUND
+                APPLY FOR A ROLE AT LOADING FUND
               </Box>
 
               <Box
