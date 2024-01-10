@@ -10,8 +10,8 @@ function Main() {
             <HeroSection />
             <About />
             <Team />
-            <CareersSection />
             <Portfolio />
+            <CareersSection />
         </>
     )
 }

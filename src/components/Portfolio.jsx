@@ -86,8 +86,7 @@ function Portfolio() {
 
     return (
 
-        <div
-            className="divide-dashed mb-8 px-40px">
+        <div className="divide-dashed mb-8 px-40px" id='portfolio'>
             <div
                 className=" mx-8 mt-8 md:top-10  border-b border-dashed border-gray-200 z-10">
 
@@ -948,7 +947,7 @@ function Portfolio() {
                                                 </Dialog.Title>
                                                 <div className="mt-2">
                                                     <p className="uppercase text-white text-center">
-                                                    Connecting customers with top 1% global product managers. We handle the sourcing, hiring, and training of the world's best product talent, delivering a ready-assembled team from day one.
+                                                        Connecting customers with top 1% global product managers. We handle the sourcing, hiring, and training of the world's best product talent, delivering a ready-assembled team from day one.
                                                     </p>
                                                 </div>
 
