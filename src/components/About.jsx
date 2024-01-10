@@ -3,10 +3,10 @@ import cubes from '../assets/cubes.png'
 import blocks from '../assets/blocks.png'
 function About() {
     return (
-      
+
     <div id="about" className="h-auto bg-black px-10"><br /> 
     {/*  dashed border  */}
-    <div className="border-b border-dashed border-white h-20" /> 
+    <div className="border-b  border-dashed border-white h-20" /> 
     {/* heading section */}
     <section className="flex justify-between gap-4 flex-col md:flex-row text-6xl  lg:text-7xl xl:text-9xl mt-6">
       <h1 className="text-[#FA4C14]" style={{ fontFamily: "DotGothic16" }}>
