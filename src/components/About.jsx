@@ -52,22 +52,32 @@ function About() {
       <img className="border white border-dashed" src={cubes} alt="stats-image"/><br/><br/>
 
       {/* stats */}
-      <div className="stats left" >
-        <h2 className="text-md w-full md:w-2/5 text-white md:pl-20 lg:pl-32 text-xs lg:text-sm xl:text-md">
-          <span className="bg-white border-white border text-black p-1 md:p-2 text-[14px]">
+      <div className="text-4xl lg:text-6xl xl:text-8xl flex flex-col" >
+        <h2 className="text-md w-full md:w-2/5 text-white text-xs lg:text-sm xl:text-md pb-5">
+          <span className="bg-white border-white border text-black p-1 md:p-2 text-[14px]" style={{fontFamily: " "}}>
             STATS
-          </span><br /><br />
+          </span><br/><br/>
         </h2>
 
-        <ul className="text-white">
-          <li className="border-t border-dashed border-white h-20">12   <span className=""> COUNTRIES   </span></li>
-          <li className="border-t border-dashed border-white h-20">48   <span className="">  TEAM MEMBERS </span></li>
-          <li className="border-t border-dashed border-white h-20">2018 <span className=""> YEAR FOUNDED</span></li>
-        </ul>
-      </div><br/>
+        <h2 className="text-md w-full md:w-full text-white">
+          <ul className="text-white text-lg md:text-5xl space-y-2 w-full">
+            <li className="border-t border-dashed border-white w-full h-15  pt-5 pb-5"  style={{ fontFamily: "DotGothic16" }}>
+              <span className="p-1 flex flex-col">12   COUNTRIES</span> 
+            </li>
+            <li className="border-t border-dashed border-white w-full h-15 pt-5 pb-5"   style={{ fontFamily: "DotGothic16" }}>
+              <span className="p-1 flex flex-col">48   TEAM MEMBERS</span>
+            </li>
+            <li className="border-t border-b border-dashed border-white h-15 pt-5 pb-5"  style={{ fontFamily: "DotGothic16" }}>
+              <span className="p-1 flex flex-col">2018    YEAR FOUNDED</span>
+            </li>
+          </ul>
+        </h2>
+
+      </div><br/><br/>
+
 
       {/* image  */}
-      <img src={blocks} alt="blocks-image"/><br/>
+      <img className="p-10 md:ml-5" src={blocks} alt="blocks-image"/><br/>
 
       {/* banner: tech is culture */}
       <div className="texts overflow-hidden w-full bg-black pb-28 text-[#FA4C14] text-4xl lg:text-6xl xl:text-8xl flex flex-row gap-4 font-medium uppercase">
