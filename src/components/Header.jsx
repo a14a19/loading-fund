@@ -26,7 +26,7 @@ const Header = () => {
             <div className='md:flex hidden' />
             <img src={fundLogo} alt="loading_fund" className='md:w-[70px] md:h-[70px] w-[60px] h-[60px]' />
             {/* <div style={{ flexGrow: 1 }} /> */}
-            <div className={`menuClass`} onMouseEnter={mouseEntered} style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <div className={`menuClass my-2`} onMouseEnter={mouseEntered} style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                 {!menuClassName &&
                     <>
                         <div style={{ display: "flex", flexDirection: "row" }}>
@@ -47,7 +47,7 @@ const Header = () => {
             {menuClassName &&
                 <div>
                     <Drawer placement={"right"} size={"sm"} isOpen={menuClassName}>
-                        <DrawerContent style={{ borderRadius: "4px", color: "black", margin: "24px 24px 0px 0px", width: "30vw", height: "fit-content", backgroundColor: "#fa4c14" }} onMouseLeave={mouseOut}>
+                        <DrawerContent style={{ borderRadius: "4px", color: "black", margin: "24px 0px 0px 0px", width: "fit-content", height: "fit-content", backgroundColor: "#fa4c14" }} onMouseLeave={mouseOut}>
                             <DrawerHeader style={{ padding: "16px", display: "flex", justifyContent: "center", alignItems: "center", borderBottom: ".0694444444vw dashed black", margin: "0px 16px" }}>
                                 {`MENU`}
                             </DrawerHeader>
@@ -109,7 +109,7 @@ const Header = () => {
                                                 </li>
                                                 <div className="dotted_vertical_ruler" />
                                                 <li className="terms_list">
-                                                    <Link to="/legal/disclosures">
+                                                    <Link to="/legal/disclosures" className='whitespace-nowrap'>
                                                         DISCLOSURES
                                                     </Link>
                                                 </li>
