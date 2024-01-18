@@ -41,8 +41,6 @@ body {
   overflow: hidden;
 }
 
-
-
 @keyframes dot {
   0% {
     content: "";
@@ -56,10 +54,6 @@ body {
   100% {
     content: "...";
   }
-}
-
-.markee {
-  margin: 16px 24px 16px 0px;
 }
 
 .dotted_horizontal_ruler {
@@ -164,19 +158,14 @@ body {
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   position: relative;
   top: 0;
   left: 0;
-  padding: 8px 24px 8px;
   background: linear-gradient(black, transparent);
   opacity: 1;
   color: white;
   width: 100%;
-  transition: opacity .5s var(--ease-out-expo);
+  transition: opacity 0.5s var(--ease-out-expo);
   z-index: 2;
 }
 

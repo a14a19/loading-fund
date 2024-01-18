@@ -92,22 +92,22 @@ function Portfolio() {
 
             </div>
             <div
-                className="flex flex-col justify-between md:flex-row ml-8">
+                className="flex flex-col justify-between md:items-center md:flex-row sm:ml-8 ml-8 ">
 
-                <p
+                <h2
                     style={{
                         lineHeight: "4.5rem",
-                        padding: "36px 0px",
+                        padding: "0px 0px",
                         color: "red",
                         fontFamily: "'DotGothic16', serif"
                     }}
-                    className="  text-7xl md:text-8xl lg:text-9xl text-left lg:text-center " >
+                    className="  text-6xl  lg:text-7xl xl:text-9xl" >
                     04
-                </p>
+                </h2>
 
                 <h1
-                    className="text-white text-6xl  mt-4 lg:text-7xl xl:text-8xl mr-auto md:ml-16 
-                    lg:ml-32 font-black">
+                    className="text-white text-5xl  mt-4 lg:text-7xl xl:text-8xl mr-auto md:ml-16 
+                    lg:ml-32 font-black sm:pl-0">
                     PORTFOLIO
                     <sup>##</sup>
                 </h1>
@@ -155,15 +155,15 @@ function Portfolio() {
                 <div className="flex basis-1/4">
                 </div>
                 <div
-                    className=" flex basis-full md:basis-2/4 text-xl sm:text-2xl md:text-3xl 
-                    text-white ml-8 md:ml-16 lg:ml-0 w-full lg:w-3/5 md:leading-10 text-balance">
+                    className=" flex basis-full md:basis-2/4 text-lg sm:text-2xl md:text-3xl 
+                    text-white pl-8 md:ml-16 lg:ml-0 w-full lg:w-3/5 md:leading-10 text-balance">
                     FROM PROTOCOLS TO EXCHANGES TO APPS AND BEYOND, WE BACK TEAMS BUILDING GENERATIONAL
                     COMPANIES AND PRODUCTS IN CRYPTO ACROSS SECTORS AND STAGES.
                 </div>
 
                 <div
-                    className=" flex basis-1/4 flex-col text-md w-full md:w-4/5 text-white 
-                    md:pl-10 text-left text-wrap pt-14 md:pt-0 mx-8 pr-8">
+                    className=" flex basis-1/4 flex-col text-sm w-full md:w-4/5 text-white 
+                    md:pl-10 text-left text-wrap pt-14 md:pt-0 px-8">
                     <span
                         className="bg-gray-300 border-white border w-min text-black 
                         p-2 text-[14px] mb-8 md:mb-4">

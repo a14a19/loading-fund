@@ -79,25 +79,26 @@ const HeroSection = () => {
   }
 
   return (
-    <div className='bg-no-repeat bg-center' style={{ backgroundImage: `url(${asset})`,  backgroundSize: "contain" }}>
+    // backgroundImage: `url(${asset})`,  
+    <div className='bg-no-repeat bg-center' style={{ backgroundSize: "contain" }}>
       <div style={containerStyle}>
-        <div className='markee'>
+        <div className='mt-7 mb-14'>
           <div id="markeeLine1" style={{ overflow: "clip", whiteSpace: "pre", fontSize: "12px" }}>{firstMarkee}</div>
           <div style={{ textAlign: "center", textTransform: "uppercase" }}>
-            <p>Unleashing Potential, One Investment at a Time.</p>
+            <p className='md:text-base sm:text-sm text-xs'>Unleashing Potential, One Investment at a Time.</p>
           </div>
           <div id="markeeLine2" style={{ overflow: "clip", whiteSpace: "pre", fontSize: "12px" }}>{secondMarkee}</div>
         </div>
-        <ScrollableText style={{ x: lr_coordinates, lineHeight: "4.5rem", padding: "24px 8px 20px" }} >
+        <ScrollableText style={{ x: lr_coordinates, padding: "100px 8px 20px" }} className='text-white md:text-[6em] sm:text-5xl text-3xl z-10 m-0 px-[20px] transition-all whitespace-nowrap leading-tight'>
           BRIDGING AMBITION
         </ScrollableText>
-        <ScrollableText style={{ x: rl_coordinates, lineHeight: "4.5rem", textAlign: "right", padding: "0px 8px" }} >
+        <ScrollableText style={{ x: rl_coordinates, textAlign: "right", padding: "0px 8px" }} className='text-white md:text-[6em] sm:text-5xl text-3xl z-10 m-0 px-[20px] transition-all whitespace-nowrap leading-tight'>
           AND OPPORTUNITY
         </ScrollableText>
-        <ScrollableText style={{ x: lr_coordinates, lineHeight: "4.5rem", padding: "24px 12px 20px", color: "red", fontFamily: "'DotGothic16', serif" }} >
+        <ScrollableText style={{ x: lr_coordinates, padding: "24px 12px 20px", color: "red", fontFamily: "'DotGothic16', serif" }} className='text-white md:text-[6em] sm:text-5xl text-3xl z-10 m-0 px-[20px] transition-all whitespace-nowrap leading-tight'>
           EMPOWERING INNOVATION
         </ScrollableText>
-        <ScrollableText style={{ x: rl_coordinates, lineHeight: "4.5rem", padding: "8px 12px 48px", textAlign: "right", color: "red", fontFamily: "'DotGothic16', serif" }} >
+        <ScrollableText style={{ x: rl_coordinates, padding: "8px 12px 48px", textAlign: "right", color: "red", fontFamily: "'DotGothic16', serif" }} className='text-white md:text-[6em] sm:text-5xl text-3xl z-10 m-0 px-[20px] transition-all whitespace-nowrap leading-tight'>
           WITH PURPOSEFUL CAPITAL
         </ScrollableText>
       </div>

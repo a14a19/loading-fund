@@ -22,11 +22,11 @@ const Header = () => {
     }
 
     return (
-        <div className={`header sticky`}>
-            <div style={{ flexGrow: 1 }} />
-            <img src={fundLogo} alt="loading_fund" height={"80px"} width={"80px"} style={{ marginLeft: "7vw" }} />
-            <div style={{ flexGrow: 1 }} />
-            <div className={`menuClass`} onMouseEnter={mouseEntered} style={{ display: "flex", flexDirection: "column", width: "7vw", height: "7vh", justifyContent: "space-between" }}>
+        <div className={`header sticky flex justify-between py-2 sm:px-6 px-3`}>
+            <div className='md:flex hidden' />
+            <img src={fundLogo} alt="loading_fund" className='md:w-[70px] md:h-[70px] w-[60px] h-[60px]' />
+            {/* <div style={{ flexGrow: 1 }} /> */}
+            <div className={`menuClass`} onMouseEnter={mouseEntered} style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                 {!menuClassName &&
                     <>
                         <div style={{ display: "flex", flexDirection: "row" }}>
@@ -34,7 +34,8 @@ const Header = () => {
                             <div style={{ flexGrow: 1 }}></div>
                             <div style={{ padding: "2px", borderRight: "1px solid red", borderTop: "1px solid red" }}></div>
                         </div>
-                        <button style={{ padding: "8px", fontSize: "0.9vw" }}>MENU</button>
+                        {/* fontSize: "0.9vw" */}
+                        <button style={{ padding: "8px", }} className='whitespace-nowrap w-fit md:mx-4 mx-1'>MENU</button>
                         <div style={{ display: "flex", flexDirection: "row" }}>
                             <div style={{ padding: "2px", borderLeft: "1px solid red", borderBottom: "1px solid red" }}></div>
                             <div style={{ flexGrow: 1 }}></div>
@@ -54,11 +55,11 @@ const Header = () => {
                                 <div style={{ width: "100%", display: "flex", justifyContent: "flex-start", alignItems: "center" }}>
                                     <ul style={{ margin: "0px 16px", width: "100%" }}>
 
-                                        <a href="/#home">
+                                        <Link to="/">
                                             <li className="menu_list_item">
                                                 <span style={{ fontFamily: "'DotGothic16', serif", paddingRight: "16px" }}>00</span> HOME
                                             </li>
-                                        </a>
+                                        </Link>
 
                                         <div className="dotted_horizontal_ruler" />
 
@@ -96,21 +97,21 @@ const Header = () => {
                                         <li>
                                             <ul style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", margin: "8px 0px", textAlign: "center" }}>
                                                 <li className="terms_list">
-                                                    <a href="/contact">
+                                                    <Link to="/contact">
                                                         CONTACT
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <div className="dotted_vertical_ruler" />
                                                 <li className="terms_list">
-                                                    <a href="/legal/terms">
+                                                    <Link to="/legal/terms">
                                                         TERMS
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <div className="dotted_vertical_ruler" />
                                                 <li className="terms_list">
-                                                    <a href="/legal/disclosures">
+                                                    <Link to="/legal/disclosures">
                                                         DISCLOSURES
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>

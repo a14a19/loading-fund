@@ -18,7 +18,7 @@ function App() {
         setIsInitialRootLoading(false);
       }, 3500);
     }
-  }, [dispatch, location.pathname]);
+  }, []);
 
   return (
     <>
