@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="bg-gray-300 border-white border text-black w-min p-2 text-[14px] text-center mb-6 ml-[-72px]">
             Info
           </div>
-          <p className="text-sm">&#169; 2024 Loading Funds Inc. All Rights Reserved.</p>
+          <p className="text-sm">&#169; 2022 Loading Funds Inc. All Rights Reserved.</p>
         </div>
       </div>
       {/* <div className="w-full border-b-2 border-dotted border-gray-200 -mt-96"></div>

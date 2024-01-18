@@ -63,13 +63,13 @@ function About() {
         <h2 className="text-md w-full md:w-full text-white">
           <ul className="text-white text-lg md:text-5xl space-y-2 w-full">
             <li className="border-t border-dashed border-white w-full h-15 flex items-center justify-between pt-5 pb-5"  style={{ fontFamily: "DotGothic16" }}> 
-              <span className="p-1 flex flex-col">12</span>  <span>COUNTRIES</span> 
+              <span className="p-1 flex flex-col">2</span>  <span>COUNTRIES</span> 
             </li>
             <li className="border-t border-dashed border-white w-full h-15 flex items-center justify-between pt-5 pb-5"   style={{ fontFamily: "DotGothic16" }}>
-              <span className="p-1 flex flex-col">48</span>  <span>TEAM MEMBERS</span>
+              <span className="p-1 flex flex-col">4</span>  <span>TEAM MEMBERS</span>
             </li>
             <li className="border-t border-b border-dashed border-white h-15 flex items-center justify-between pt-5 pb-5"  style={{ fontFamily: "DotGothic16" }}>
-              <span className="p-1 flex flex-col">2024</span>  <span>YEAR FOUNDED</span>
+              <span className="p-1 flex flex-col">2022</span>  <span>YEAR FOUNDED</span>
             </li>
           </ul>
         </h2>
