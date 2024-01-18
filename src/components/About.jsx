@@ -69,7 +69,7 @@ function About() {
               <span className="p-1 flex flex-col">48</span>  <span>TEAM MEMBERS</span>
             </li>
             <li className="border-t border-b border-dashed border-white h-15 flex items-center justify-between pt-5 pb-5"  style={{ fontFamily: "DotGothic16" }}>
-              <span className="p-1 flex flex-col">2018</span>  <span>YEAR FOUNDED</span>
+              <span className="p-1 flex flex-col">2024</span>  <span>YEAR FOUNDED</span>
             </li>
           </ul>
         </h2>
